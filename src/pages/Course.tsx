@@ -70,7 +70,7 @@ function Course() {
     <div className="bg-primaryBgColor">
       <Header>
         <HeroContent>
-          <div className="flex flex-wrap w-full mt-10 md:mt-0 items-center justify-center">
+          <div className="flex flex-wrap w-full mt-10 md:mt-0 items-center justify-center overflow-hidden">
             <motion.div
               initial={{ opacity: 0, x: "100%" }}
               whileInView={{ opacity: 1, x: 0 }}
