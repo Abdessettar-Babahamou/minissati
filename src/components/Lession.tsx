@@ -16,7 +16,7 @@ interface LessionProps{
 function Lession({title,lessionNumber,duration ,value}:LessionProps) {
   return (
     <AccordionItem value={value} className="  ">
-      <AccordionTrigger className="flex md:gap-8 justify-between w-full bg-white px-0  ">
+      <AccordionTrigger className="flex md:gap-8 justify-between w-full bg-white px-0  "  left={false}>
         <h2 className="text-xs md:text-2xl font-medium">
           {title}
         </h2>

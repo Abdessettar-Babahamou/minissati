@@ -1,8 +1,8 @@
 import { navLinks } from "@/constants";
 import { cn } from "@/lib/utils";
+import React from "react";
 import { Link } from "react-router-dom";
-
-function NavBarLinks({ className }: { className?: string }) {
+ function NavBarLinks({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -11,10 +11,13 @@ function NavBarLinks({ className }: { className?: string }) {
       )}
     >
       {navLinks.map((item, index) => (
-        <>
-          <Link className={cn('lg:text-white   text-xl hover:text-primary',{
-            '!text-primary': index === 1
-          })} key={index} to={item.url}>
+        <React.Fragment key={index}>
+          <Link
+            className={cn("lg:text-white   text-xl hover:text-primary", {
+              "!text-primary": index === 1,
+            })}
+            to={item.url}
+          >
             {item.title}
           </Link>
           {navLinks.length - 1 !== index && (
@@ -22,7 +25,7 @@ function NavBarLinks({ className }: { className?: string }) {
               {" "}
             </span>
           )}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

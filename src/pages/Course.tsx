@@ -47,10 +47,9 @@ function Course() {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${baseUrl}/api/course/${id}`);
-        console.log(response.data["success"]);
 
         setcourseDetails(response.data["course"]);
-
+        console.log(loading);
       } catch (error) {
         console.error("Error fetching data:", error);
         navigate("/");
