@@ -64,7 +64,7 @@ function Footer() {
           <h2 className="text-2xl text-white font-bold">تحقق من شهادتك</h2>
           <div
             className="flex items-center bg-white  
-            rounded-full md:w-[370px] h-[60px] m-2 pr-2 py-2 shadow-3xl"
+            rounded-full lg:w-[370px] h-[60px] m-2 pr-2 py-2 shadow-3xl"
           >
             <Input
               className="border-none text-sm"
