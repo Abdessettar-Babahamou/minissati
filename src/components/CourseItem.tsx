@@ -64,11 +64,14 @@ function CourseItem({ course }: CourseItemProps) {
           </h3>
         </div>
       </div>
-      <div className="flex justify-between pr-3">
-        <Badge title={"جديد"} icon={vector} className="bg-orangeColor" />
-        <Link to={`course/${course.id}`}>
+      <div className="flex flex-1 items-end  justify-between pr-3 ">
+        <div className="flex   justify-between w-full">
+        <Badge title={"جديد"} icon={vector} className="bg-orangeColor " />
+        <Link to={`course/${course.id}`} className="">
           <SectionTitle title={"التفاصيل"} subtitle="..." />
         </Link>
+
+        </div>
       </div>
     </motion.div>
   );
