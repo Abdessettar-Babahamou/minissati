@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 function Footer() {
   return (
     <div>
-      <div className="flex flex-wrap  gap-4 items-center p-8 bg-purpleColor text-white">
+      <div className="flex flex-wrap  gap-4 items-center justify-center p-8 bg-purpleColor text-white overflow-hidden">
         <motion.img
           initial={{ opacity: 0, x: "100%" }}
           whileInView={{ opacity: 1, x: 0 }}

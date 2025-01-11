@@ -15,7 +15,7 @@ function LearnItem({ course_outputs, index }: LearnItemProps) {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 * index }}
       viewport={{ once: true }}
-      className="flex flex-wrap gap-10 p-8 bg-purpleColor rounded-xl w-full"
+      className="flex flex-wrap md:flex-nowrap gap-10 p-8 bg-purpleColor rounded-xl w-full"
     >
       <img src={star} alt="" />
       <div className="flex gap-2 flex-col text-white">

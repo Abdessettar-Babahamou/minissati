@@ -17,12 +17,12 @@ function SectionTitle({
   return (
     <div
       className={cn(`flex gap-2 items-center justify-center bg-purpleColor text-white
-        px-4  lg:px-[50px] lg:py-[15px] 
+        p-4  lg:px-[50px] lg:py-[15px] 
     rounded-tr-[30px]  rounded-bl-[30px]`,className)}
     >
       {iconExist && <img src={icon} alt="icon" />}
 
-      <span className="  ">
+      <span className=" text-xs ">
         {title}
 
         {subtitle && <span className="text-2xl  "> {subtitle}</span>}
