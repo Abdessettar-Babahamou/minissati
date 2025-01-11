@@ -24,7 +24,7 @@ function SubLession() {
           />
         </div>
       </AccordionTrigger>
-      <AccordionContent className="md:pr-40">
+      <AccordionContent className="lg:pr-40">
         <ol className=" space-y-4 list-disc list-inside">
           {desginLession.map((item, index) => (
             <li className="flex justify-between" key={index}>
