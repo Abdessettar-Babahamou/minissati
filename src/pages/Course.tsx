@@ -42,6 +42,8 @@ function Course() {
     undefined
   );
   const [loading, setLoading] = useState(true);
+  console.log(id)
+  if (!id) navigate("/");
 
   useEffect(() => {
     const fetchData = async () => {
